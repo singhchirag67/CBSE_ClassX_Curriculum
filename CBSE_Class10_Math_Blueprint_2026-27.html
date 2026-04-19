@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBSE Class 10 Mathematics – Study Blueprint 2026-27</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+  :root {
+    --blue-50: #E6F1FB; --blue-200: #85B7EB; --blue-600: #185FA5; --blue-800: #0C447C; --blue-900: #042C53;
+    --teal-50: #E1F5EE; --teal-200: #5DCAA5; --teal-600: #0F6E56; --teal-800: #085041;
+    --amber-50: #FAEEDA; --amber-200: #EF9F27; --amber-600: #854F0B; --amber-800: #633806;
+    --red-50: #FCEBEB; --red-200: #F09595; --red-600: #A32D2D; --red-800: #791F1F;
+    --green-50: #EAF3DE; --green-200: #97C459; --green-600: #3B6D11; --green-800: #27500A;
+    --purple-50: #EEEDFE; --purple-200: #AFA9EC; --purple-600: #534AB7; --purple-800: #3C3489;
+    --coral-50: #FAECE7; --coral-200: #F0997B; --coral-600: #993C1D; --coral-800: #712B13;
+    --gray-50: #F1EFE8; --gray-200: #B4B2A9; --gray-600: #5F5E5A; --gray-800: #444441;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #f8f7f3;
+  }
+
+  /* COVER SECTION */
+  .cover {
+    background: linear-gradient(135deg, #042C53 0%, #185FA5 60%, #0F6E56 100%);
+    color: white;
+    padding: 3.75rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -5rem; right: -5rem;
+    width: 18.75rem; height: 18.75rem;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -3.75rem; left: 12.5rem;
+    width: 12.5rem; height: 12.5rem;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.03);
+  }
+  .cover-tag {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9FE1CB;
+    margin-bottom: 1rem;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.625rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .cover-sub {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 2rem;
+  }
+  .cover-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+  .cover-pill {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 1.25rem;
+    padding: 0.3125rem 0.875rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  /* LAYOUT */
+  .container { width: 100%; max-width: 56.25rem; overflow-x: hidden; margin: 0 auto; padding: 0 2rem 3.75rem; }
+
+  /* MARKS GRID */
+  .marks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
+    gap: 0.75rem;
+    margin: 2rem 0;
+  }
+  .marks-card {
+    border-radius: 0.625rem;
+    padding: 1rem 1.125rem;
+    position: relative;
+  }
+  .marks-card .unit-label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .marks-card .unit-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  .marks-card .marks-badge {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+  }
+  .marks-card .marks-text {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .mc-blue { background: var(--blue-50); }
+  .mc-blue .unit-label { color: var(--blue-600); }
+  .mc-blue .unit-name { color: var(--blue-800); }
+  .mc-blue .marks-badge { color: var(--blue-800); }
+  .mc-blue .marks-text { color: var(--blue-600); }
+
+  .mc-teal { background: var(--teal-50); }
+  .mc-teal .unit-label { color: var(--teal-600); }
+  .mc-teal .unit-name { color: var(--teal-800); }
+  .mc-teal .marks-badge { color: var(--teal-800); }
+  .mc-teal .marks-text { color: var(--teal-600); }
+
+  .mc-purple { background: var(--purple-50); }
+  .mc-purple .unit-label { color: var(--purple-600); }
+  .mc-purple .unit-name { color: var(--purple-800); }
+  .mc-purple .marks-badge { color: var(--purple-800); }
+  .mc-purple .marks-text { color: var(--purple-600); }
+
+  .mc-amber { background: var(--amber-50); }
+  .mc-amber .unit-label { color: var(--amber-600); }
+  .mc-amber .unit-name { color: var(--amber-800); }
+  .mc-amber .marks-badge { color: var(--amber-800); }
+  .mc-amber .marks-text { color: var(--amber-600); }
+
+  .mc-green { background: var(--green-50); }
+  .mc-green .unit-label { color: var(--green-600); }
+  .mc-green .unit-name { color: var(--green-800); }
+  .mc-green .marks-badge { color: var(--green-800); }
+  .mc-green .marks-text { color: var(--green-600); }
+
+  .mc-coral { background: var(--coral-50); }
+  .mc-coral .unit-label { color: var(--coral-600); }
+  .mc-coral .unit-name { color: var(--coral-800); }
+  .mc-coral .marks-badge { color: var(--coral-800); }
+  .mc-coral .marks-text { color: var(--coral-600); }
+
+  .mc-red { background: var(--red-50); }
+  .mc-red .unit-label { color: var(--red-600); }
+  .mc-red .unit-name { color: var(--red-800); }
+  .mc-red .marks-badge { color: var(--red-800); }
+  .mc-red .marks-text { color: var(--red-600); }
+
+  /* SECTION HEADERS */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.875rem;
+    border-bottom: 2px solid #ddd;
+  }
+  .section-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #042C53;
+  }
+  .section-header .section-sub {
+    font-size: 0.8125rem;
+    color: #666;
+    margin-top: 1px;
+  }
+
+  /* CHAPTER CARDS */
+  .chapter-card {
+    background: white;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+  }
+  .chapter-header {
+    padding: 1.125rem 1.375rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .ch-num {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .ch-info { flex: 1; }
+  .ch-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    color: #042C53;
+    margin-bottom: 0.25rem;
+  }
+  .ch-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+  }
+  .ch-badge {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    padding: 3px 0.625rem;
+    border-radius: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0.3125rem;
+  }
+  .badge-high { background: var(--red-50); color: var(--red-600); }
+  .badge-medium { background: var(--amber-50); color: var(--amber-600); }
+  .badge-low { background: var(--green-50); color: var(--green-600); }
+  .badge-marks { background: var(--blue-50); color: var(--blue-800); }
+
+  .chapter-body { padding: 1.125rem 1.375rem; }
+
+  /* TOPIC TREE */
+  .topic-tree { list-style: none; }
+  .topic-item { margin-bottom: 0.875rem; }
+  .topic-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .topic-name::before {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .subtopic-list { list-style: none; padding-left: 1.25rem; border-left: 2px solid #f0f0f0; margin-left: 0.3125rem; }
+  .subtopic-item {
+    font-size: 0.8125rem;
+    color: #444;
+    padding: 3px 0 3px 0.75rem;
+    position: relative;
+  }
+  .subtopic-item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #aaa;
+    font-size: 0.6875rem;
+    top: 0.25rem;
+  }
+  .micro-list { list-style: none; padding-left: 1rem; margin-top: 0.25rem; }
+  .micro-item {
+    font-size: 0.75rem;
+    color: #666;
+    padding: 2px 0 2px 0.625rem;
+    position: relative;
+  }
+  .micro-item::before {
+    content: '◦';
+    position: absolute;
+    left: 0;
+    color: #bbb;
+  }
+
+  /* WEIGHTAGE CATEGORY COLOR DOTS */
+  .dot-blue::before { background: var(--blue-600); }
+  .dot-teal::before { background: var(--teal-600); }
+  .dot-purple::before { background: var(--purple-600); }
+  .dot-amber::before { background: var(--amber-600); }
+  .dot-green::before { background: var(--green-600); }
+  .dot-coral::before { background: var(--coral-600); }
+  .dot-red::before { background: var(--red-600); }
+
+  /* DIVIDER LABEL */
+  .sub-section-label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin: 1.125rem 0 0.625rem;
+  }
+
+  /* INFO BOXES */
+  .info-box {
+    border-radius: 0.5rem;
+    padding: 0.875rem 1rem;
+    margin: 0.625rem 0;
+    font-size: 0.8125rem;
+  }
+  .info-box-blue { background: var(--blue-50); border-left: 3px solid var(--blue-600); color: var(--blue-800); }
+  .info-box-amber { background: var(--amber-50); border-left: 3px solid var(--amber-600); color: var(--amber-800); }
+  .info-box-teal { background: var(--teal-50); border-left: 3px solid var(--teal-600); color: var(--teal-800); }
+  .info-box-red { background: var(--red-50); border-left: 3px solid var(--red-600); color: var(--red-800); }
+  .info-box-purple { background: var(--purple-50); border-left: 3px solid var(--purple-600); color: var(--purple-800); }
+  .info-box-coral { background: var(--coral-50); border-left: 3px solid var(--coral-600); color: var(--coral-800); }
+  .info-box-green { background: var(--green-50); border-left: 3px solid var(--green-600); color: var(--green-800); }
+
+  .info-box strong { font-weight: 700; display: block; margin-bottom: 0.25rem; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* FORMULA GRID */
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr));
+    gap: 0.75rem;
+    margin: 0.875rem 0;
+  }
+  .formula-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    padding: 0.875rem;
+  }
+  .formula-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 0.375rem;
+  }
+  .formula-text {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8125rem;
+    color: #042C53;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  /* QUESTION TYPES */
+  .qtype-list { list-style: none; margin: 0; }
+  .qtype-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.8125rem;
+  }
+  .qtype-item:last-child { border-bottom: none; }
+  .qtype-num {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--blue-50);
+    color: var(--blue-800);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* MISTAKES */
+  .mistake-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid #fef5f5;
+    font-size: 0.8125rem;
+  }
+  .mistake-item:last-child { border-bottom: none; }
+  .mistake-x {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background: var(--red-50);
+    color: var(--red-600);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* CHANGES TABLE */
+  .changes-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8125rem;
+    margin: 0.875rem 0;
+  }
+  .changes-table th {
+    background: var(--gray-50);
+    color: var(--gray-800);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.625rem 0.875rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .changes-table td {
+    padding: 0.625rem 0.875rem;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: top;
+    color: #333;
+    line-height: 1.5;
+  }
+  .changes-table tr:last-child td { border-bottom: none; }
+  .tag-added { background: var(--green-50); color: var(--green-600); font-size: 0.625rem; font-weight: 700; padding: 2px 0.5rem; border-radius: 0.625rem; text-transform: uppercase; }
+  .tag-removed { background: var(--red-50); color: var(--red-600); font-size: 0.625rem; font-weight: 700; padding: 2px 0.5rem; border-radius: 0.625rem; text-transform: uppercase; }
+  .tag-modified { background: var(--amber-50); color: var(--amber-600); font-size: 0.625rem; font-weight: 700; padding: 2px 0.5rem; border-radius: 0.625rem; text-transform: uppercase; }
+
+  /* EXAM BLUEPRINT TABLE */
+  .exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8125rem;
+  }
+  .exam-table th {
+    background: var(--blue-800);
+    color: white;
+    padding: 0.625rem 0.875rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .exam-table td {
+    padding: 0.5625rem 0.875rem;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+  }
+  .exam-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* PRIORITY LEGEND */
+  .priority-legend {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 1.5rem;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4375rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .legend-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 3px;
+  }
+
+  /* TOC */
+  .toc { background: white; border: 1px solid #e5e5e5; border-radius: 0.75rem; padding: 1.5rem; margin: 2rem 0; }
+  .toc h3 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #042C53; margin-bottom: 1rem; }
+  .toc-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.5rem 1.25rem; }
+  .toc-item a { text-decoration: none; font-size: 0.8125rem; color: var(--blue-600); font-weight: 600; }
+  .toc-item a:hover { color: var(--blue-800); text-decoration: underline; }
+  .toc-item { display: flex; align-items: center; gap: 0.5rem; }
+  .toc-num { font-size: 0.625rem; font-weight: 700; color: #bbb; min-width: 1rem; }
+
+  /* IMPORTANT CONCEPTS PANEL */
+  .concepts-panel {
+    background: linear-gradient(135deg, #042C53, #185FA5);
+    border-radius: 0.75rem;
+    padding: 1.75rem;
+    color: white;
+    margin: 0.875rem 0;
+  }
+  .concepts-panel h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: #9FE1CB;
+  }
+  .concept-row {
+    display: flex;
+    gap: 0.625rem;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.8125rem;
+  }
+  .concept-row:last-child { border-bottom: none; }
+  .concept-star { color: #EF9F27; font-size: 0.875rem; flex-shrink: 0; margin-top: 1px; }
+  .concept-text { color: rgba(255,255,255,0.9); line-height: 1.5; }
+  .concept-tag {
+    background: rgba(255,255,255,0.12);
+    border-radius: 0.625rem;
+    font-size: 0.625rem;
+    padding: 2px 0.5rem;
+    color: rgba(255,255,255,0.7);
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #042C53;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.75rem;
+    margin-top: 3.75rem;
+  }
+
+  /* WEIGHTAGE CATEGORIES SECTION */
+  .wt-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+    margin: 1.25rem 0;
+  }
+  .wt-card {
+    border-radius: 0.625rem;
+    padding: 1rem;
+  }
+  .wt-card h4 {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .wt-card ul { list-style: none; }
+  .wt-card li { font-size: 0.75rem; padding: 3px 0; display: flex; justify-content: space-between; }
+  .wt-card li span { font-weight: 700; }
+
+  .wt-high { background: var(--red-50); }
+  .wt-high h4 { color: var(--red-600); }
+  .wt-high li { color: var(--red-800); }
+  .wt-medium { background: var(--amber-50); }
+  .wt-medium h4 { color: var(--amber-600); }
+  .wt-medium li { color: var(--amber-800); }
+  .wt-low { background: var(--green-50); }
+  .wt-low h4 { color: var(--green-600); }
+  .wt-low li { color: var(--green-800); }
+
+  /* Table responsive wrapper */
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
+  }
+  .changes-table { min-width: 37.5rem; }
+  .exam-table { min-width: 37.5rem; }
+
+  /* Question types / Mistakes grid layout */
+  .qtype-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.875rem;
+  }
+  .mistakes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  /* Unit label inline badges */
+  .unit-label-inline {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 1.75rem 0 0.75rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    display: inline-block;
+  }
+
+  @media print {
+    .chapter-card { break-inside: avoid; }
+    .cover { print-color-adjust: exact; }
+  }
+
+  /* ========================================
+     RESPONSIVE MEDIA QUERIES
+     ======================================== */
+
+  /* Mobile — max-width: 480px */
+  @media (max-width: 480px) {
+    body { font-size: 0.875rem; line-height: 1.65; }
+
+    .cover { padding: 2rem 1.25rem; }
+    .cover h1 { font-size: 1.75rem; }
+    .cover-sub { font-size: 1rem; }
+    .cover-tag { font-size: 0.625rem; letter-spacing: 2px; }
+    .cover::before { top: -2rem; right: -2rem; width: 10rem; height: 10rem; }
+    .cover::after { bottom: -2rem; left: 5rem; width: 8rem; height: 8rem; }
+    .cover-pills { gap: 0.5rem; }
+    .cover-pill { font-size: 0.6875rem; padding: 0.375rem 0.75rem; }
+
+    .container { padding: 0 0.875rem 2rem; }
+
+    .marks-grid { grid-template-columns: 1fr; gap: 0.625rem; }
+    .formula-grid { grid-template-columns: 1fr; }
+    .toc-list { grid-template-columns: 1fr; }
+
+    .section-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; margin: 2rem 0 1rem; }
+    .section-header h2 { font-size: 1.3125rem; }
+
+    .chapter-header { flex-direction: column; gap: 0.625rem; padding: 1rem; }
+    .chapter-body { padding: 1rem; }
+    .ch-name { font-size: 1.0625rem; }
+    .ch-meta { gap: 0.375rem; }
+    .ch-badge { font-size: 0.625rem; padding: 0.1875rem 0.5rem; }
+
+    .subtopic-list { padding-left: 1rem; }
+    .topic-name { font-size: 0.8125rem; }
+
+    .qtype-grid { grid-template-columns: 1fr; }
+    .wt-section { grid-template-columns: 1fr; }
+
+    .concepts-panel { padding: 1.25rem; }
+    .concepts-panel h3 { font-size: 1rem; }
+    .concept-row { flex-wrap: wrap; }
+    .concept-tag { margin-left: 1.375rem; }
+
+    .info-box { padding: 0.75rem 0.875rem; font-size: 0.8125rem; }
+
+    .toc { padding: 1rem; }
+    .toc h3 { font-size: 0.9375rem; }
+
+    .footer { padding: 1rem; font-size: 0.6875rem; }
+
+    .priority-legend { gap: 0.75rem; }
+
+    .qtype-item, .mistake-item { font-size: 0.8125rem; min-height: 2.75rem; }
+
+    .unit-label-inline { font-size: 0.625rem; }
+  }
+
+  /* Tablet — 481px to 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .cover { padding: 2.5rem 1.75rem; }
+    .cover h1 { font-size: 2.125rem; }
+
+    .container { padding: 0 1.25rem 2.5rem; }
+
+    .marks-grid { grid-template-columns: repeat(2, 1fr); }
+    .qtype-grid { grid-template-columns: 1fr; }
+    .wt-section { grid-template-columns: repeat(2, 1fr); }
+    .formula-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .section-header h2 { font-size: 1.4375rem; }
+
+    .chapter-header { padding: 1rem 1.125rem; }
+    .chapter-body { padding: 1rem 1.125rem; }
+  }
+
+  /* Desktop — 769px and above */
+  @media (min-width: 769px) {
+    .wt-section { grid-template-columns: repeat(3, 1fr); }
+    .qtype-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* Large Desktop — 1025px and above */
+  @media (min-width: 1025px) {
+    /* Retains original desktop layout unchanged */
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-tag">CBSE Board Exam Preparation</div>
+  <h1>Class X Mathematics<br>Study Blueprint</h1>
+  <div class="cover-sub">Mathematics Standard (Code 041) &amp; Basic (Code 241) — Academic Year 2026–27</div>
+  <div class="cover-pills">
+    <div class="cover-pill">Complete Chapter Analysis</div>
+    <div class="cover-pill">Marks Breakdown</div>
+    <div class="cover-pill">Important Formulas</div>
+    <div class="cover-pill">Common Mistakes</div>
+    <div class="cover-pill">Question Types</div>
+    <div class="cover-pill">Syllabus Changes</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Contents of this Blueprint</h3>
+    <ul class="toc-list">
+      <li class="toc-item"><span class="toc-num">01</span><a href="#course-structure">Course Structure &amp; Marks Breakdown</a></li>
+      <li class="toc-item"><span class="toc-num">02</span><a href="#weightage">Weightage Categories</a></li>
+      <li class="toc-item"><span class="toc-num">03</span><a href="#chapters">Chapter-wise Detailed Analysis</a></li>
+      <li class="toc-item"><span class="toc-num">04</span><a href="#important">Most Important Concepts for Board Exam</a></li>
+      <li class="toc-item"><span class="toc-num">05</span><a href="#qtypes">Common Question Types</a></li>
+      <li class="toc-item"><span class="toc-num">06</span><a href="#mistakes">Common Mistakes Students Make</a></li>
+      <li class="toc-item"><span class="toc-num">07</span><a href="#changes">Syllabus Changes (2026–27)</a></li>
+      <li class="toc-item"><span class="toc-num">08</span><a href="#exam-design">Question Paper Design</a></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1: COURSE STRUCTURE -->
+  <div id="course-structure" class="section-header">
+    <div class="section-icon" style="background:#E6F1FB;color:#185FA5;">01</div>
+    <div>
+      <h2>Course Structure &amp; Marks Breakdown</h2>
+      <div class="section-sub">Total: 80 marks (Theory) + 20 marks (Internal Assessment) = 100 marks</div>
+    </div>
+  </div>
+
+  <div class="marks-grid">
+    <div class="marks-card mc-teal">
+      <div class="unit-label">Unit I</div>
+      <div class="unit-name">Number Systems</div>
+      <div class="marks-badge">06</div>
+      <div class="marks-text">marks</div>
+    </div>
+    <div class="marks-card mc-blue">
+      <div class="unit-label">Unit II</div>
+      <div class="unit-name">Algebra</div>
+      <div class="marks-badge">20</div>
+      <div class="marks-text">marks — Highest</div>
+    </div>
+    <div class="marks-card mc-purple">
+      <div class="unit-label">Unit III</div>
+      <div class="unit-name">Coordinate Geometry</div>
+      <div class="marks-badge">06</div>
+      <div class="marks-text">marks</div>
+    </div>
+    <div class="marks-card mc-amber">
+      <div class="unit-label">Unit IV</div>
+      <div class="unit-name">Geometry</div>
+      <div class="marks-badge">15</div>
+      <div class="marks-text">marks</div>
+    </div>
+    <div class="marks-card mc-coral">
+      <div class="unit-label">Unit V</div>
+      <div class="unit-name">Trigonometry</div>
+      <div class="marks-badge">12</div>
+      <div class="marks-text">marks</div>
+    </div>
+    <div class="marks-card mc-green">
+      <div class="unit-label">Unit VI</div>
+      <div class="unit-name">Mensuration</div>
+      <div class="marks-badge">10</div>
+      <div class="marks-text">marks</div>
+    </div>
+    <div class="marks-card mc-red">
+      <div class="unit-label">Unit VII</div>
+      <div class="unit-name">Statistics &amp; Probability</div>
+      <div class="marks-badge">11</div>
+      <div class="marks-text">marks</div>
+    </div>
+  </div>
+
+  <div class="info-box info-box-blue">
+    <strong>Internal Assessment (20 marks)</strong>
+    Pen Paper Test + Multiple Assessment: 10 marks &nbsp;|&nbsp; Portfolio: 5 marks &nbsp;|&nbsp; Lab Practical: 5 marks
+  </div>
+
+  <!-- SECTION 2: WEIGHTAGE CATEGORIES -->
+  <div id="weightage" class="section-header">
+    <div class="section-icon" style="background:#FAECE7;color:#993C1D;">02</div>
+    <div>
+      <h2>Weightage Categories</h2>
+      <div class="section-sub">Prioritise chapters based on marks contribution</div>
+    </div>
+  </div>
+
+  <div class="wt-section">
+    <div class="wt-card wt-high">
+      <h4>🔴 High Weightage</h4>
+      <ul>
+        <li>Algebra <span>20 marks</span></li>
+        <li>Geometry <span>15 marks</span></li>
+        <li>Trigonometry <span>12 marks</span></li>
+        <li>Stat &amp; Prob <span>11 marks</span></li>
+      </ul>
+    </div>
+    <div class="wt-card wt-medium">
+      <h4>🟡 Medium Weightage</h4>
+      <ul>
+        <li>Mensuration <span>10 marks</span></li>
+      </ul>
+    </div>
+    <div class="wt-card wt-low">
+      <h4>🟢 Low Weightage</h4>
+      <ul>
+        <li>Number Systems <span>06 marks</span></li>
+        <li>Coord. Geometry <span>06 marks</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-box info-box-amber">
+    <strong>Strategy Note</strong>
+    Algebra alone is 25% of the theory paper. Geometry + Trigonometry combined = 27 marks. Together, these three units cover 58.75% of the total theory marks. Master these first before moving to other units.
+  </div>
+
+  <!-- SECTION 3: CHAPTER-WISE ANALYSIS -->
+  <div id="chapters" class="section-header">
+    <div class="section-icon" style="background:#9FE1CB;color:#085041;">03</div>
+    <div>
+      <h2>Chapter-wise Detailed Analysis</h2>
+      <div class="section-sub">Topics → Subtopics → Micro-concepts for every chapter</div>
+    </div>
+  </div>
+
+  <div class="priority-legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--red-600);"></div> High weightage chapter</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--amber-600);"></div> Medium weightage chapter</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--green-600);"></div> Low weightage chapter</div>
+  </div>
+
+  <!-- ===== UNIT I ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0F6E56;margin:28px 0 12px;padding:6px 12px;background:var(--teal-50);border-radius:6px;display:inline-block;">UNIT I — NUMBER SYSTEMS (6 Marks)</div>
+
+  <!-- Chapter 1 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--teal-50);color:var(--teal-800);">Ch 1</div>
+      <div class="ch-info">
+        <div class="ch-name">Real Numbers</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-low">Low Weightage</span>
+          <span class="ch-badge badge-marks">6 Marks (Unit I)</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-teal">Fundamental Theorem of Arithmetic</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Statement of the theorem (every composite number expressible as product of primes)
+              <ul class="micro-list">
+                <li class="micro-item">Unique prime factorisation of natural numbers</li>
+                <li class="micro-item">Motivating through examples (e.g., factorising 156, 3825)</li>
+                <li class="micro-item">Illustrations connecting to earlier knowledge (HCF and LCM)</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Applying to find HCF and LCM using prime factorisation
+              <ul class="micro-list">
+                <li class="micro-item">HCF = product of smallest powers of common prime factors</li>
+                <li class="micro-item">LCM = product of greatest powers of all prime factors</li>
+                <li class="micro-item">Relationship: HCF × LCM = Product of two numbers</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-teal">Irrationality Proofs</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Proof that √2 is irrational
+              <ul class="micro-list">
+                <li class="micro-item">Proof by contradiction method</li>
+                <li class="micro-item">Assumption: √2 = p/q where p, q are co-prime integers</li>
+                <li class="micro-item">Deriving contradiction using divisibility</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Proof that √3 is irrational (same technique as √2)</li>
+            <li class="subtopic-item">Proof that √5 is irrational (same technique)</li>
+            <li class="subtopic-item">Proving composite forms like 3 + 2√5 is irrational
+              <ul class="micro-list">
+                <li class="micro-item">Using contradiction: assuming rational, isolating irrational part</li>
+                <li class="micro-item">Showing rational = irrational leads to contradiction</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="info-box info-box-teal" style="margin-top:14px;">
+        <strong>Competency Focus</strong>
+        Understanding properties of real numbers; extending power/exponent understanding; applying FTA in real-life contexts.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== UNIT II ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#185FA5;margin:28px 0 12px;padding:6px 12px;background:var(--blue-50);border-radius:6px;display:inline-block;">UNIT II — ALGEBRA (20 Marks — Highest Weightage)</div>
+
+  <!-- Chapter 2 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--blue-50);color:var(--blue-800);">Ch 2</div>
+      <div class="ch-info">
+        <div class="ch-name">Polynomials</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 20 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Zeros of a Polynomial</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Geometrical meaning of zeros — where graph crosses the x-axis</li>
+            <li class="subtopic-item">Finding zeros graphically (reading x-intercepts)
+              <ul class="micro-list">
+                <li class="micro-item">Parabola graphs for quadratic polynomials</li>
+                <li class="micro-item">Zero, one, or two intersections with x-axis</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Finding zeros algebraically (by factorisation, middle-term splitting)</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Relationship Between Zeros and Coefficients</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">For quadratic polynomial ax² + bx + c:
+              <ul class="micro-list">
+                <li class="micro-item">Sum of zeros = −b/a</li>
+                <li class="micro-item">Product of zeros = c/a</li>
+                <li class="micro-item">Forming quadratic polynomial when zeros are given: x² − (sum)x + product</li>
+                <li class="micro-item">Verifying relationship with calculated zeros</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 3 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--blue-50);color:var(--blue-800);">Ch 3</div>
+      <div class="ch-info">
+        <div class="ch-name">Pair of Linear Equations in Two Variables</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 20 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Graphical Method of Solution</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Plotting two linear equations on the same graph
+              <ul class="micro-list">
+                <li class="micro-item">Intersection point = unique solution (consistent)</li>
+                <li class="micro-item">Parallel lines = no solution (inconsistent)</li>
+                <li class="micro-item">Coincident lines = infinitely many solutions (dependent)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Algebraic Conditions for Number of Solutions</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Unique solution: a₁/a₂ ≠ b₁/b₂</li>
+            <li class="subtopic-item">No solution: a₁/a₂ = b₁/b₂ ≠ c₁/c₂</li>
+            <li class="subtopic-item">Infinitely many solutions: a₁/a₂ = b₁/b₂ = c₁/c₂</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Algebraic Methods</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Substitution method
+              <ul class="micro-list">
+                <li class="micro-item">Express one variable in terms of the other; substitute and solve</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Elimination method
+              <ul class="micro-list">
+                <li class="micro-item">Multiply equations to equalise coefficients; add or subtract to eliminate one variable</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Simple situational/word problems (age problems, number problems, geometry-based)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 4 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--blue-50);color:var(--blue-800);">Ch 4</div>
+      <div class="ch-info">
+        <div class="ch-name">Quadratic Equations</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 20 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Standard Form</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">ax² + bx + c = 0, where a ≠ 0</li>
+            <li class="subtopic-item">Identifying and converting equations to standard form</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Methods of Solving Quadratic Equations</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Factorisation method
+              <ul class="micro-list">
+                <li class="micro-item">Splitting the middle term</li>
+                <li class="micro-item">Setting each factor to zero</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Quadratic formula (Shridharacharya's formula)
+              <ul class="micro-list">
+                <li class="micro-item">x = [−b ± √(b² − 4ac)] / 2a</li>
+                <li class="micro-item">Only real roots are in scope</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Discriminant and Nature of Roots</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Discriminant D = b² − 4ac
+              <ul class="micro-list">
+                <li class="micro-item">D &gt; 0 → two distinct real roots</li>
+                <li class="micro-item">D = 0 → two equal real roots (coincident)</li>
+                <li class="micro-item">D &lt; 0 → no real roots</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Real-life Word Problems</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Problems involving areas, speeds, time-and-distance, upstream/downstream, consecutive numbers</li>
+            <li class="subtopic-item">Formulating quadratic equations from word problems and solving</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 5 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--blue-50);color:var(--blue-800);">Ch 5</div>
+      <div class="ch-info">
+        <div class="ch-name">Arithmetic Progressions (AP)</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 20 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Introduction and Motivation</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Definition: sequence where difference between consecutive terms is constant</li>
+            <li class="subtopic-item">Common difference d = aₙ − aₙ₋₁ (constant)</li>
+            <li class="subtopic-item">First term a, common difference d as defining parameters</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">nth Term Formula</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">aₙ = a + (n−1)d
+              <ul class="micro-list">
+                <li class="micro-item">Finding nth term given a and d</li>
+                <li class="micro-item">Finding n (which term) given aₙ</li>
+                <li class="micro-item">Finding a or d from given information</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Sum of First n Terms</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Sₙ = n/2 × [2a + (n−1)d]</li>
+            <li class="subtopic-item">Sₙ = n/2 × (a + l), where l = last term</li>
+            <li class="subtopic-item">Derivation of the formula (Gauss's method)</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-blue">Applications</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Real-life problems: savings, stacking objects, arranging seats, salary increments</li>
+            <li class="subtopic-item">Finding number of terms between two terms</li>
+            <li class="subtopic-item">Problems where aₙ is given and finding Sₙ or vice versa</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== UNIT III ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#534AB7;margin:28px 0 12px;padding:6px 12px;background:var(--purple-50);border-radius:6px;display:inline-block;">UNIT III — COORDINATE GEOMETRY (6 Marks)</div>
+
+  <!-- Chapter 6 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--purple-50);color:var(--purple-800);">Ch 6</div>
+      <div class="ch-info">
+        <div class="ch-name">Coordinate Geometry</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-low">Low Weightage</span>
+          <span class="ch-badge badge-marks">6 Marks (Unit III)</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-purple">Review of Coordinate Geometry Concepts</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Cartesian plane, axes, origin, quadrants</li>
+            <li class="subtopic-item">Plotting points in all four quadrants</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-purple">Distance Formula</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Distance between two points A(x₁, y₁) and B(x₂, y₂)
+              <ul class="micro-list">
+                <li class="micro-item">AB = √[(x₂−x₁)² + (y₂−y₁)²]</li>
+                <li class="micro-item">Distance of a point from origin: √(x² + y²)</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Applications: proving collinearity, type of quadrilateral (square, rhombus, rectangle, parallelogram)</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-purple">Section Formula (Internal Division only)</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Point dividing line segment in ratio m:n internally
+              <ul class="micro-list">
+                <li class="micro-item">x = (mx₂ + nx₁)/(m+n), y = (my₂ + ny₁)/(m+n)</li>
+                <li class="micro-item">Midpoint formula as special case (m=n=1): ((x₁+x₂)/2, (y₁+y₂)/2)</li>
+                <li class="micro-item">Finding ratio of division given the dividing point</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="info-box info-box-purple" style="margin-top:14px;">
+        <strong>Important Note</strong>
+        External division is NOT in the syllabus for 2026–27. Only internal division is prescribed.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== UNIT IV ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#854F0B;margin:28px 0 12px;padding:6px 12px;background:var(--amber-50);border-radius:6px;display:inline-block;">UNIT IV — GEOMETRY (15 Marks)</div>
+
+  <!-- Chapter 7 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--amber-50);color:var(--amber-800);">Ch 7</div>
+      <div class="ch-info">
+        <div class="ch-name">Triangles</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 15 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Similar Triangles — Definitions and Examples</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Definition of similarity: same shape, not necessarily same size</li>
+            <li class="subtopic-item">Difference between congruence (≅) and similarity (~)</li>
+            <li class="subtopic-item">Counter-examples to wrong assumptions about similarity</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Basic Proportionality Theorem (BPT / Thales' Theorem) — PROOF REQUIRED</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Statement: If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, it divides those sides in the same ratio</li>
+            <li class="subtopic-item">Proof using area method (construction of equal triangles)</li>
+            <li class="subtopic-item">Converse of BPT — State without proof</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Similarity Criteria — State without Proof</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">AA (Angle-Angle) similarity criterion</li>
+            <li class="subtopic-item">SSS (Side-Side-Side) similarity criterion</li>
+            <li class="subtopic-item">SAS (Side-Angle-Side) similarity criterion</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Applications of Similar Triangles</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Finding unknown sides in similar triangles</li>
+            <li class="subtopic-item">Proving triangles similar using given conditions</li>
+            <li class="subtopic-item">Combined problems using BPT and similarity criteria</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="info-box info-box-amber" style="margin-top:14px;">
+        <strong>Syllabus Note — 2026-27</strong>
+        Area of similar triangles and Pythagoras theorem (and its converse) have been REMOVED from the 2026–27 syllabus compared to older curricula. Only BPT (proof) and similarity criteria (statement only) are retained.
+      </div>
+    </div>
+  </div>
+
+  <!-- Chapter 8 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--amber-50);color:var(--amber-800);">Ch 8</div>
+      <div class="ch-info">
+        <div class="ch-name">Circles</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 15 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Tangent to a Circle — Concepts</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Definition of tangent at a point of contact</li>
+            <li class="subtopic-item">Point of contact, secant vs tangent distinction</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Theorem 1 — PROOF REQUIRED</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Statement: The tangent at any point of a circle is perpendicular to the radius through the point of contact (OT ⊥ PT)</li>
+            <li class="subtopic-item">Proof using contradiction method</li>
+            <li class="subtopic-item">Applications: finding angles in figures with circles and tangents</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-amber">Theorem 2 — PROOF REQUIRED</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Statement: The lengths of tangents drawn from an external point to a circle are equal (PA = PB)</li>
+            <li class="subtopic-item">Proof using RHS congruence (OAP ≅ OBP)</li>
+            <li class="subtopic-item">Applications: problems involving tangent lengths from external points, perimeter of triangles circumscribing circles</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="info-box info-box-amber" style="margin-top:14px;">
+        <strong>Syllabus Note — 2026-27</strong>
+        Construction chapter has been completely REMOVED. Circles chapter is now focused only on the two tangent theorems (both proofs required) and their applications.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== UNIT V ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#993C1D;margin:28px 0 12px;padding:6px 12px;background:var(--coral-50);border-radius:6px;display:inline-block;">UNIT V — TRIGONOMETRY (12 Marks)</div>
+
+  <!-- Chapter 9 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--coral-50);color:var(--coral-800);">Ch 9</div>
+      <div class="ch-info">
+        <div class="ch-name">Introduction to Trigonometry</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 12 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Trigonometric Ratios</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Six ratios of acute angles of a right-angled triangle
+              <ul class="micro-list">
+                <li class="micro-item">sin A = Opposite/Hypotenuse, cos A = Adjacent/Hypotenuse</li>
+                <li class="micro-item">tan A = Opposite/Adjacent = sin A / cos A</li>
+                <li class="micro-item">cosec A = 1/sin A, sec A = 1/cos A, cot A = 1/tan A</li>
+                <li class="micro-item">Proof of well-definedness (ratios are independent of which right triangle is used)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Trigonometric Ratios of Standard Angles</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Values at 0°, 30°, 45°, 60°, 90°
+              <ul class="micro-list">
+                <li class="micro-item">sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1</li>
+                <li class="micro-item">cos: reverse pattern (1, √3/2, 1/√2, 1/2, 0)</li>
+                <li class="micro-item">tan: 0, 1/√3, 1, √3, undefined</li>
+                <li class="micro-item">Motivating ratios at 0° and 90° via limit thinking</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Relationships Between Trigonometric Ratios</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Reciprocal relations: cosec = 1/sin, sec = 1/cos, cot = 1/tan</li>
+            <li class="subtopic-item">Quotient relations: tan = sin/cos, cot = cos/sin</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 10 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--coral-50);color:var(--coral-800);">Ch 10</div>
+      <div class="ch-info">
+        <div class="ch-name">Trigonometric Identities</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 12 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Pythagorean Identities — PROOF REQUIRED</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">sin²A + cos²A = 1 — primary identity (proof using Pythagoras theorem)</li>
+            <li class="subtopic-item">Derived: 1 + tan²A = sec²A</li>
+            <li class="subtopic-item">Derived: 1 + cot²A = cosec²A</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Application of Identities</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Proving trigonometric identities (LHS = RHS)
+              <ul class="micro-list">
+                <li class="micro-item">Converting everything to sin and cos</li>
+                <li class="micro-item">Using algebraic manipulation (factorisation, rationalisation)</li>
+                <li class="micro-item">Only simple identities as per syllabus</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 11 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--coral-50);color:var(--coral-800);">Ch 11</div>
+      <div class="ch-info">
+        <div class="ch-name">Heights and Distances</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 12 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Angle of Elevation and Depression</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Angle of elevation: angle above horizontal line to look UP at an object</li>
+            <li class="subtopic-item">Angle of depression: angle below horizontal line to look DOWN at an object</li>
+            <li class="subtopic-item">Drawing diagrams correctly for given scenarios</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-coral">Solving Problems</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Problems involving maximum two right triangles</li>
+            <li class="subtopic-item">Angles restricted to 30°, 45°, and 60° only</li>
+            <li class="subtopic-item">Setting up the correct ratio (tan, sin, cos) from the diagram
+              <ul class="micro-list">
+                <li class="micro-item">Finding height of buildings, towers, hills</li>
+                <li class="micro-item">Finding distance between two objects</li>
+                <li class="micro-item">Problems from two positions of observer</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== UNIT VI ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#3B6D11;margin:28px 0 12px;padding:6px 12px;background:var(--green-50);border-radius:6px;display:inline-block;">UNIT VI — MENSURATION (10 Marks)</div>
+
+  <!-- Chapter 12 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--green-50);color:var(--green-800);">Ch 12</div>
+      <div class="ch-info">
+        <div class="ch-name">Areas Related to Circles</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-medium">Medium Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 10 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-green">Area of Sector</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Area of sector = (θ/360°) × πr²</li>
+            <li class="subtopic-item">Length of arc = (θ/360°) × 2πr</li>
+            <li class="subtopic-item">Perimeter of sector = 2r + arc length</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-green">Area of Segment</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Minor segment = Area of sector − Area of triangle</li>
+            <li class="subtopic-item">Major segment = Area of circle − Area of minor segment</li>
+            <li class="subtopic-item">Problems restricted to central angles of 60°, 90°, and 120° only</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-green">Combined Figure Problems</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Shaded/unshaded region problems combining circles with triangles, rectangles, squares</li>
+            <li class="subtopic-item">Problems on perimeters and areas of combined plane figures</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 13 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--green-50);color:var(--green-800);">Ch 13</div>
+      <div class="ch-info">
+        <div class="ch-name">Surface Areas and Volumes</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-medium">Medium Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 10 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-green">Surface Areas of Combinations of Solids</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Cube: TSA = 6a², LSA = 4a²</li>
+            <li class="subtopic-item">Cuboid: TSA = 2(lb+bh+lh), LSA = 2(l+b)h</li>
+            <li class="subtopic-item">Cylinder: CSA = 2πrh, TSA = 2πr(r+h)</li>
+            <li class="subtopic-item">Cone: CSA = πrl, TSA = πr(r+l), l = √(r²+h²)</li>
+            <li class="subtopic-item">Sphere: TSA = 4πr²; Hemisphere: CSA = 2πr², TSA = 3πr²</li>
+            <li class="subtopic-item">Surface area of combinations (cone on cylinder, hemisphere on cylinder, etc.)
+              <ul class="micro-list">
+                <li class="micro-item">Identifying which faces are exposed and which are hidden at joints</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-green">Volumes of Combinations of Solids</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Volume formulas: Cube (a³), Cuboid (lbh), Cylinder (πr²h), Cone (1/3 πr²h), Sphere (4/3 πr³), Hemisphere (2/3 πr³)</li>
+            <li class="subtopic-item">Combinations of any two of: cubes, cuboids, spheres, hemispheres, cylinders, cones</li>
+            <li class="subtopic-item">Conversion/melting/recasting problems (volume before = volume after)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== UNIT VII ===== -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#791F1F;margin:28px 0 12px;padding:6px 12px;background:var(--red-50);border-radius:6px;display:inline-block;">UNIT VII — STATISTICS AND PROBABILITY (11 Marks)</div>
+
+  <!-- Chapter 14 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--red-50);color:var(--red-800);">Ch 14</div>
+      <div class="ch-info">
+        <div class="ch-name">Statistics</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 11 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-red">Mean of Grouped Data</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Direct Method: x̄ = Σfᵢxᵢ / Σfᵢ</li>
+            <li class="subtopic-item">Assumed Mean Method: x̄ = a + (Σfᵢdᵢ / Σfᵢ), where dᵢ = xᵢ − a</li>
+            <li class="subtopic-item">Step Deviation Method: x̄ = a + (Σfᵢuᵢ / Σfᵢ) × h, where uᵢ = (xᵢ−a)/h</li>
+            <li class="subtopic-item">Choosing appropriate method based on data complexity</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-red">Median of Grouped Data</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Cumulative frequency table construction</li>
+            <li class="subtopic-item">Median = l + [(n/2 − cf)/f] × h
+              <ul class="micro-list">
+                <li class="micro-item">l = lower boundary of median class</li>
+                <li class="micro-item">cf = cumulative frequency before median class</li>
+                <li class="micro-item">f = frequency of median class</li>
+                <li class="micro-item">h = class width</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-red">Mode of Grouped Data</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Modal class: class with highest frequency</li>
+            <li class="subtopic-item">Mode = l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h</li>
+            <li class="subtopic-item">Bimodal situation to be AVOIDED (as per syllabus)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chapter 15 -->
+  <div class="chapter-card">
+    <div class="chapter-header">
+      <div class="ch-num" style="background:var(--red-50);color:var(--red-800);">Ch 15</div>
+      <div class="ch-info">
+        <div class="ch-name">Probability</div>
+        <div class="ch-meta">
+          <span class="ch-badge badge-high">High Weightage Unit</span>
+          <span class="ch-badge badge-marks">Part of 11 Marks</span>
+        </div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="sub-section-label">Topic Breakdown</div>
+      <ul class="topic-tree">
+        <li class="topic-item">
+          <div class="topic-name dot-red">Classical Definition of Probability</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">P(E) = Number of favourable outcomes / Total number of outcomes</li>
+            <li class="subtopic-item">Conditions: equally likely, mutually exclusive, exhaustive outcomes</li>
+            <li class="subtopic-item">Range of probability: 0 ≤ P(E) ≤ 1</li>
+            <li class="subtopic-item">P(Ē) = 1 − P(E) (complementary events)</li>
+          </ul>
+        </li>
+        <li class="topic-item">
+          <div class="topic-name dot-red">Simple Probability Problems</div>
+          <ul class="subtopic-list">
+            <li class="subtopic-item">Coins: single, double, triple coin experiments
+              <ul class="micro-list">
+                <li class="micro-item">Sample space, favourable events, computing probabilities</li>
+              </ul>
+            </li>
+            <li class="subtopic-item">Dice: single and double die problems</li>
+            <li class="subtopic-item">Cards: standard 52-card deck problems (suits, face cards, numbered cards)</li>
+            <li class="subtopic-item">Balls in bags / coloured marbles</li>
+            <li class="subtopic-item">Days of week, months of year problems</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 4: MOST IMPORTANT CONCEPTS -->
+  <div id="important" class="section-header">
+    <div class="section-icon" style="background:#FAEEDA;color:#854F0B;">04</div>
+    <div>
+      <h2>Most Important Concepts for Board Exam</h2>
+      <div class="section-sub">Formulas, theorems, and frequently tested concepts — must memorise all</div>
+    </div>
+  </div>
+
+  <div class="concepts-panel">
+    <h3>Critical Formulas &amp; Theorems</h3>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Quadratic formula: x = [−b ± √(b²−4ac)] / 2a and discriminant D = b²−4ac determining nature of roots</div>
+      <div class="concept-tag">Ch 4</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">AP nth term: aₙ = a + (n−1)d and sum formula: Sₙ = n/2 [2a + (n−1)d] = n/2 (a+l)</div>
+      <div class="concept-tag">Ch 5</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">For quadratic polynomial: Sum of zeros = −b/a, Product of zeros = c/a</div>
+      <div class="concept-tag">Ch 2</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">BPT (Thales): If DE ∥ BC in △ABC, then AD/DB = AE/EC — full proof required in board exam</div>
+      <div class="concept-tag">Ch 7</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Both circle tangent theorems with full proofs: (1) Tangent ⊥ Radius at contact point, (2) Tangents from external point are equal</div>
+      <div class="concept-tag">Ch 8</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Pythagorean identities: sin²A + cos²A = 1, 1+tan²A = sec²A, 1+cot²A = cosec²A — all derivable from the first</div>
+      <div class="concept-tag">Ch 10</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Standard angle table for sin, cos, tan at 0°, 30°, 45°, 60°, 90° — must know all 15 values perfectly</div>
+      <div class="concept-tag">Ch 9</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Median formula: l + [(n/2 − cf)/f] × h and Mode formula: l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h for grouped data</div>
+      <div class="concept-tag">Ch 14</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Area of sector = (θ/360) × πr²; Area of minor segment = Area of sector − Area of triangle</div>
+      <div class="concept-tag">Ch 12</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Irrationality proofs: structure of contradiction proof for √2, √3, √5 — know all steps</div>
+      <div class="concept-tag">Ch 1</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)) and distance formula: √[(x₂−x₁)²+(y₂−y₁)²]</div>
+      <div class="concept-tag">Ch 6</div>
+    </div>
+    <div class="concept-row">
+      <div class="concept-star">★</div>
+      <div class="concept-text">P(E) = Favourable outcomes / Total outcomes; P(E) + P(Ē) = 1</div>
+      <div class="concept-tag">Ch 15</div>
+    </div>
+  </div>
+
+  <div class="formula-grid" style="margin-top:18px;">
+    <div class="formula-card">
+      <div class="formula-label">Volume Formulas (must memorise)</div>
+      <div class="formula-text">
+        Cone: (1/3)πr²h<br>
+        Sphere: (4/3)πr³<br>
+        Hemisphere: (2/3)πr³<br>
+        Cylinder: πr²h
+      </div>
+    </div>
+    <div class="formula-card">
+      <div class="formula-label">Surface Area Formulas</div>
+      <div class="formula-text">
+        Cone CSA: πrl, l=√(r²+h²)<br>
+        Cone TSA: πr(r+l)<br>
+        Sphere: 4πr²<br>
+        Hemisphere TSA: 3πr²
+      </div>
+    </div>
+    <div class="formula-card">
+      <div class="formula-label">Conditions for Pair of Linear Equations</div>
+      <div class="formula-text">
+        Unique sol: a₁/a₂ ≠ b₁/b₂<br>
+        No sol: a₁/a₂=b₁/b₂ ≠ c₁/c₂<br>
+        Inf. sol: a₁/a₂=b₁/b₂=c₁/c₂
+      </div>
+    </div>
+    <div class="formula-card">
+      <div class="formula-label">Statistics Formulas</div>
+      <div class="formula-text">
+        Mean (Direct): Σfx/Σf<br>
+        Mean (Step Dev): a+(Σfu/Σf)×h<br>
+        Median: l+[(n/2−cf)/f]×h<br>
+        Mode: l+[(f₁−f₀)/(2f₁−f₀−f₂)]×h
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: QUESTION TYPES -->
+  <div id="qtypes" class="section-header">
+    <div class="section-icon" style="background:#E6F1FB;color:#185FA5;">05</div>
+    <div>
+      <h2>Common Question Types by Chapter</h2>
+      <div class="section-sub">What to expect in the actual board exam from each chapter</div>
+    </div>
+  </div>
+
+  <div class="qtype-grid">
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Real Numbers</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Prove √2, √3 or composite irrational (e.g. 3+2√5) is irrational — 2/3 mark question</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Find HCF and LCM using prime factorisation — MCQ or 2-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Assertion-Reason type on FTA</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Polynomials</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Find zeros of a given quadratic polynomial</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Verify relationship between zeros and coefficients</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find quadratic polynomial given sum and product of zeros</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Linear Equations</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Solve pair of linear equations by substitution or elimination — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Word problems: age, numbers, geometry, coins — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Graphical solution and checking consistency</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Find k for system to have no solution or infinitely many solutions</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Quadratic Equations</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Solve using factorisation — 2/3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Solve using quadratic formula — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find discriminant and nature of roots</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Real-life word problem: formulate and solve — 4-mark (case study)</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Arithmetic Progressions</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Find nth term given conditions — 2-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Find sum of n terms — 2/3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find which term equals a given value — 2-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Real-life problems: stacking, salary, seats in rows — 4/5-mark</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Triangles</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Prove BPT — 3/5-mark theorem proof</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Prove two given triangles are similar — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find unknown side using similarity and proportionality</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Application of BPT in given figure — 3/4-mark</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Circles</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Prove tangent ⊥ radius — 3-mark theorem proof</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Prove tangents from external point are equal — 3-mark theorem proof</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find angle/length in figure using both theorems — 3/4-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Perimeter of triangle touching a circle</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Trigonometry</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Prove trigonometric identity (LHS=RHS) — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Evaluate expression using standard angle values — 2-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Heights and distances word problem — 3/4-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Find value of trig ratio given another ratio</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Mensuration</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Area of sector + segment problem — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Surface area and volume of combination of two solids — 4/5-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Melting/recasting problems (equating volumes)</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Shaded area of combined plane figure — 3-mark</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:14px 16px;">
+        <div class="ch-info"><div class="ch-name" style="font-size:15px;">Statistics &amp; Probability</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <ul class="qtype-list">
+          <li class="qtype-item"><div class="qtype-num">1</div><div>Compute mean using all three methods — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">2</div><div>Find median from cumulative frequency table — 3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">3</div><div>Find mode of grouped data — 2/3-mark</div></li>
+          <li class="qtype-item"><div class="qtype-num">4</div><div>Probability of events with dice, cards, or balls — 2/3-mark</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: COMMON MISTAKES -->
+  <div id="mistakes" class="section-header">
+    <div class="section-icon" style="background:#FCEBEB;color:#A32D2D;">06</div>
+    <div>
+      <h2>Common Mistakes Students Make</h2>
+      <div class="section-sub">Chapter-wise errors that cost marks in boards — avoid these</div>
+    </div>
+  </div>
+
+  <div class="mistakes-grid">
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Real Numbers</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Writing "assume √2 = p/q where p and q are integers" without stating they are co-prime — this step is critical for the proof</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Not showing the contradiction explicitly — just saying "so it's irrational" without proving p and q share a common factor</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Confusing HCF × LCM = product of numbers (only valid for exactly TWO numbers, not three or more)</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Polynomials</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Confusing "zeros of polynomial" with "roots of equation" — they're the same concept but framing matters in proofs</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Writing Sum of zeros = b/a instead of −b/a (missing the negative sign)</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Not verifying the relationship after finding zeros — losing easy verification marks</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Linear Equations</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Making sign errors during elimination — especially when subtracting equations</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Not checking the solution by substituting back into both original equations</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In word problems: setting up the wrong variable — not reading the problem carefully enough</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Applying conditions a₁/a₂, b₁/b₂, c₁/c₂ without bringing equations to standard form ax+by+c=0 first</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Quadratic Equations</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Middle-term splitting errors: not finding factors correctly or splitting with wrong signs</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Forgetting to write the condition a ≠ 0 when identifying a, b, c from the equation</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Computing discriminant incorrectly: D = b² − 4ac, not −b² − 4ac or b² + 4ac</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Rejecting negative roots in real-life problems without checking if they make contextual sense</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Arithmetic Progressions</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Using Sₙ formula when nth term (aₙ) is required, or vice versa — read the question carefully</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Forgetting that d can be negative (decreasing AP) — don't assume d is positive</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Getting n as a fraction or negative and not recognising this means incorrect setup</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Mixing up aₙ (last term) and Sₙ (sum) — the question often uses both in the same problem</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Triangles &amp; Circles (Geometry)</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Not drawing an accurate diagram before starting geometry proofs — always draw and label clearly</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Skipping construction steps in BPT proof — every step of the proof must be explicitly stated</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Writing "AA similarity" without specifying WHICH angles are equal and WHY</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In circles: assuming OT ⊥ PT without stating theorem name and proving it first when required</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Confusing "equal tangents" theorem with "tangent perpendicular to radius" — different theorems, different proofs</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Trigonometry</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Confusing sin²A with (sinA)² — they are the same, but writing sin²A = sinA² is wrong notation</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Forgetting to prove LHS = RHS independently — never cross-multiply or assume equality in identity proofs</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In heights and distances: not identifying which angle is elevation and which is depression</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Using wrong trigonometric ratio — always check which sides (opposite, adjacent, hypotenuse) you have</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Writing tan 90° = some number — it is undefined, not a large number</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Mensuration</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Using diameter instead of radius in formulas — always halve the given diameter</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Adding the area of the joined face when computing surface area of combinations — it should be SUBTRACTED (hidden face)</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Not using l = √(r²+h²) for slant height of cone — forgetting this step</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In segment problems: using wrong triangle formula — area of equilateral triangle ≠ (1/2)base×height when not computed correctly</div></div>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <div class="chapter-header" style="padding:12px 16px;background:var(--red-50);">
+        <div class="ch-info"><div class="ch-name" style="font-size:14px;color:var(--red-800);">Statistics &amp; Probability</div></div>
+      </div>
+      <div class="chapter-body" style="padding:12px 16px;">
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In Mean: using class boundaries instead of class marks (midpoints) as xᵢ — always use midpoint</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In Median: not identifying the correct median class (n/2, not n/2 + 1) — use cumulative frequency carefully</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In Mode: confusing f₀ and f₂ — f₀ is frequency of class BEFORE modal class, f₂ is AFTER</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>In Probability: not listing all outcomes in sample space before computing — leads to wrong denominators</div></div>
+        <div class="mistake-item"><div class="mistake-x">✗</div><div>Confusing face cards (12) with cards with faces: Ace is not a face card</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 7: SYLLABUS CHANGES -->
+  <div id="changes" class="section-header">
+    <div class="section-icon" style="background:#EAF3DE;color:#3B6D11;">07</div>
+    <div>
+      <h2>Syllabus Changes for 2026–27</h2>
+      <div class="section-sub">Aligned with NEP 2020 and NCF–SE 2023 — note all additions, removals, and modifications</div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+<table class="changes-table">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Chapter / Topic</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Triangles — Pythagoras Theorem</td>
+        <td>Proof and converse of Pythagoras Theorem removed. Was previously a major 5-mark proof question. No longer prescribed.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Triangles — Areas of Similar Triangles</td>
+        <td>Theorem: ratio of areas of similar triangles = square of ratio of corresponding sides — removed from syllabus.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Constructions (entire chapter)</td>
+        <td>Division of a line segment, construction of tangents to a circle — entire chapter removed. This was previously worth marks under geometry/constructions.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Coordinate Geometry — Area of Triangle</td>
+        <td>Formula for area of triangle using coordinates removed. Only Distance formula and Section formula (internal) retained.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Real Numbers — Decimal Expansions</td>
+        <td>Terminating and non-terminating recurring decimals link to rational numbers no longer explicitly listed (may still be tested implicitly).</td>
+      </tr>
+      <tr>
+        <td><span class="tag-removed">Removed</span></td>
+        <td>Pair of Linear Equations — Cross Multiplication Method</td>
+        <td>Cross multiplication as a third algebraic method has been dropped. Only substitution and elimination are prescribed.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-modified">Modified</span></td>
+        <td>Trigonometric Identities</td>
+        <td>Emphasis on "only simple identities" — complex multi-step identity proofs are less likely. Focus on the three Pythagorean identities and their basic applications.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-modified">Modified</span></td>
+        <td>Mensuration — Areas Related to Circles</td>
+        <td>Segment problems now explicitly restricted to central angles of 60°, 90°, and 120° only. Other angles will not appear.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-modified">Modified</span></td>
+        <td>Overall Curriculum Philosophy</td>
+        <td>Shift from rote learning to competency-based education. More emphasis on real-life application, modelling, and contextualised problems. Increased focus on proof-writing for specified theorems.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-added">Added/Emphasised</span></td>
+        <td>Indian Knowledge System Integration</td>
+        <td>Curriculum now explicitly integrates contributions of Indian mathematicians (e.g., Shridharacharya's formula, Aryabhata, Brahmagupta context). Questions may reference historical context.</td>
+      </tr>
+      <tr>
+        <td><span class="tag-added">Added/Emphasised</span></td>
+        <td>Competency-based Learning</td>
+        <td>New typology of questions: 22% marks for Analysing/Evaluating/Creating (higher-order thinking). Case-study based questions now carry significant weight.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="info-box info-box-red" style="margin-top:16px;">
+    <strong>Critical Alert for 2026-27 Students</strong>
+    Do NOT prepare Pythagoras Theorem proof, Constructions chapter, Area of Triangle formula (coordinate geometry), or Cross Multiplication method for the board exam. These are officially removed from the prescribed syllabus. Spending time on them is counterproductive.
+  </div>
+
+  <!-- SECTION 8: EXAM DESIGN -->
+  <div id="exam-design" class="section-header">
+    <div class="section-icon" style="background:#EEEDFE;color:#534AB7;">08</div>
+    <div>
+      <h2>Question Paper Design</h2>
+      <div class="section-sub">Understand what types of thinking are being tested and in what proportion</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:20px;">
+    <div style="font-size:13px;font-weight:700;color:#534AB7;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Mathematics Standard (Code 041) — Time: 3 Hours | Max: 80 Marks</div>
+    <div class="table-responsive">
+<table class="exam-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Cognitive Level</th>
+          <th>Marks</th>
+          <th>Weightage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Remembering + Understanding</strong></td>
+          <td>Recall facts, describe, organise, compare, interpret</td>
+          <td>43</td>
+          <td>~54%</td>
+        </tr>
+        <tr>
+          <td><strong>Applying</strong></td>
+          <td>Solve problems in new situations using acquired knowledge</td>
+          <td>19</td>
+          <td>~24%</td>
+        </tr>
+        <tr>
+          <td><strong>Analysing + Evaluating + Creating</strong></td>
+          <td>Higher-order thinking: infer, judge, compile, propose solutions</td>
+          <td>18</td>
+          <td>~22%</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </div>
+
+  <div style="margin-bottom:20px;">
+    <div style="font-size:13px;font-weight:700;color:#3B6D11;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Mathematics Basic (Code 241) — Time: 3 Hours | Max: 80 Marks</div>
+    <div class="table-responsive">
+<table class="exam-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Cognitive Level</th>
+          <th>Marks</th>
+          <th>Weightage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Remembering + Understanding</strong></td>
+          <td>Recall facts, describe, organise, compare, interpret</td>
+          <td>60</td>
+          <td>~75%</td>
+        </tr>
+        <tr>
+          <td><strong>Applying</strong></td>
+          <td>Solve problems in new situations using acquired knowledge</td>
+          <td>12</td>
+          <td>~15%</td>
+        </tr>
+        <tr>
+          <td><strong>Analysing + Evaluating + Creating</strong></td>
+          <td>Higher-order thinking: infer, judge, compile, propose solutions</td>
+          <td>8</td>
+          <td>~10%</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </div>
+
+  <div class="info-box info-box-blue">
+    <strong>Prescribed Books (NCERT)</strong>
+    (1) Mathematics Textbook for Class X — NCERT Publication &nbsp;|&nbsp; (2) Guidelines for Mathematics Laboratory in Schools, Class X — CBSE Publication &nbsp;|&nbsp; (3) Laboratory Manual — Mathematics, Secondary Stage — NCERT Publication &nbsp;|&nbsp; (4) Mathematics Exemplar Problems for Class X — NCERT Publication
+  </div>
+
+  <div class="info-box info-box-teal" style="margin-top:14px;">
+    <strong>Final Strategy for 95%+ in Boards</strong>
+    Master Algebra (20 marks) first — it is 25% of the paper. Then Geometry (15 marks) with both theorem proofs perfectly memorised. Then Trigonometry (12 marks) — the identity proofs and heights-and-distances. Do not neglect Statistics (grouped data formulas must be applied without errors). For Internal Assessment (20 marks), complete all lab activities, maintain a neat portfolio, and prepare thoroughly for Pen Paper Tests — these 20 marks can be secured almost completely with regular effort.
+  </div>
+
+</div>
+
+<div class="footer">
+  CBSE Class X Mathematics — Study Blueprint 2026–27 &nbsp;|&nbsp; Mathematics Standard (Code 041) &amp; Basic (Code 241) &nbsp;|&nbsp; Aligned with NEP 2020 &amp; NCF–SE 2023
+</div>
+
+</body>
+</html>
