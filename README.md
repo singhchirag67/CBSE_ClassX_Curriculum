@@ -64,13 +64,11 @@ Built as part of a larger vision to create a **complete study system for CBSE st
 
 ## 🤝 Contribution
 Currently a personal project, but suggestions and improvements are always welcome!
----
+
 
 ## 📌 Author
-
-**Chirag Singh**
+Chirag Singh
 Class 10 Student | Aspiring Top Ranker | Building Smart Study Systems
----
 
 ## ⭐ Support
 If you found this useful:
